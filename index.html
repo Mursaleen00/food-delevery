@@ -33,6 +33,7 @@
 
       * {
         font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
       }
     </style>
 
@@ -47,7 +48,9 @@
   </head>
   <body class="px-6 lg:px-24 font-poppins text-black space-y-10 lg:space-y-20">
     <!-- Navbar Start -->
-    <nav class="flex justify-between py-6 items-center">
+    <nav
+      class="flex justify-between py-6 items-center sticky top-0 z-50 bg-white"
+    >
       <!-- Logo -->
       <img
         src="./img/logo.svg"
@@ -57,13 +60,19 @@
 
       <!-- Page Links -->
       <ul class="hidden md:flex text-black font-semibold text-sm flex gap-x-5">
-        <li class="text-red cursor-pointer">Why Foodeli?</li>
+        <li class="text-red cursor-pointer">
+          <a href="#hero"> Why Foodeli? </a>
+        </li>
         <li class="cursor-pointer">
-          Services
+          <a href="#service" class=""> Services </a>
           <i class="fa-solid fa-angle-down text-red"></i>
         </li>
         <li class="cursor-pointer">
           Menu
+          <i class="fa-solid fa-angle-down text-red"></i>
+        </li>
+        <li class="cursor-pointer">
+          <a href="#about-us" class=""> About Us </a>
           <i class="fa-solid fa-angle-down text-red"></i>
         </li>
         <li class="cursor-pointer">Contact</li>
@@ -87,11 +96,117 @@
     <!-- Navbar End -->
 
     <!-- Hero Section Start -->
-    <section></section>
+    <section
+      id="hero"
+      class="grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-20 items-center scroll-my-32"
+    >
+      <!-- Section 1 -->
+      <div class="h-full flex flex-col justify-between gap-y-10">
+        <div class="flex gap-x-2 items-center">
+          <h3 class="text-red font-semibold text-base font-poppins">
+            More than Faster
+          </h3>
+          <img src="./img/chary.svg" alt="chary" width="20" height="18" />
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h1
+            class="sm:text-5xl text-4xl lg:text-[67px] font-bold font-poppins"
+          >
+            Claim Best Offer on Fast
+            <span class="text-red italic"> Food </span> &
+            <span class="text-red italic"> Restaurants </span>
+          </h1>
+
+          <p class="text-lg font-semibold text-black">
+            Our job is to filling your tummy with delicious food and with fast
+            and free delivery
+          </p>
+
+          <div class="flex gap-6 items-center flex-col sm:flex-row">
+            <button
+              class="py-4 px-5 w-[186px] h-[68px] rounded-full bg-red text-white text-lg font-semibold"
+            >
+              Get Started
+            </button>
+            <div class="flex items-center gap-x-6">
+              <img src="./img/play.png" alt="play" width="46" height="46" />
+              <p class="text-black text-lg font-semibold">Watch Video</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="h-[64px] grid md:grid-cols-4 grid-cols-1 gap-y-6 gap-x-3 items-center"
+        >
+          <div class="relative -top-8">
+            <p class="text-transparent">hello</p>
+            <img
+              src="./img/client (1).png"
+              alt="client"
+              width="64"
+              height="64"
+              class="absolute top-0"
+            />
+            <img
+              src="./img/client (2).png"
+              alt="client"
+              width="64"
+              height="64"
+              class="absolute left-10 z-10 top-0"
+            />
+            <img
+              src="./img/client (3).png"
+              alt="client"
+              width="64"
+              height="64"
+              class="absolute left-20 z-20 top-0"
+            />
+          </div>
+          <div class="col-span-3">
+            <p class="text-lg font-semibold">Our Happy Customer</p>
+            <div class="flex gap-x-3 items-center">
+              <img src="./img/star.svg" alt="star" width="24" height="24" />
+              <p class="text-lg font-semibold">4,8</p>
+              <p class="text-dark-gray text-base">(12.5k Review)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="relative justify-self-center">
+        <!-- Main Image -->
+        <img src="./img/hero-img.png" alt="hero" width="670" height="650" />
+
+        <!-- Absolute Images -->
+        <img
+          src="./img/clock.png"
+          alt="clock"
+          width="90"
+          height="85"
+          class="absolute top-0 left-0"
+        />
+        <img
+          src="./img/call.png"
+          alt="clock"
+          width="323"
+          height="71"
+          class="absolute bottom-16 left-0 md:w-[323px] w-[200px] sm:w-[290px]"
+        />
+        <img
+          src="./img/pizza card.png"
+          alt="clock"
+          width="272"
+          height="131"
+          class="absolute bottom-0 right-0 md:w-[272px] w-[120px] sm:w-[200px]"
+        />
+      </div>
+    </section>
     <!-- Hero Section End -->
 
-    <!-- About Section Start -->
-    <section class="space-y-2 text-center">
+    <!-- Service Section Start -->
+    <section class="space-y-2 text-center scroll-my-32" id="service">
       <!-- Headings -->
       <h3 class="text-red font-semibold text-lg font-poppins">WHAT WE SERVE</h3>
       <h1
@@ -140,10 +255,13 @@
         </div>
       </div>
     </section>
-    <!-- About Section End -->
+    <!-- Service Section End -->
 
-    <!-- Customers Review Section Start -->
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+    <!-- About Us Section Start -->
+    <section
+      class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center scroll-my-32"
+      id="about-us"
+    >
       <div class="h-full max-h-[751px] relative">
         <img src="./img/chef.png" alt="" width="661" height="700" />
         <img
@@ -159,6 +277,7 @@
           class="absolute top-20 left-14"
         />
       </div>
+
       <div class="h-fit space-y-4">
         <h3
           class="text-red font-semibold text-lg font-poppins text-center lg:text-start"
@@ -196,7 +315,7 @@
         </div>
       </div>
     </section>
-    <!-- Customers Review Section End -->
+    <!-- About Us Section End -->
 
     <!-- Footer Start -->
     <footer class="grid sm:grid-cols-2 lg:grid-cols-5 py-6 gap-6">
