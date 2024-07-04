@@ -35,6 +35,20 @@
         font-family: "Poppins", sans-serif;
         scroll-behavior: smooth;
       }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #eb0029;
+        border-radius: 8px;
+      }
     </style>
 
     <!-- Font Awesome -->
@@ -46,10 +60,11 @@
     <!-- Title -->
     <title>Food Delivery</title>
   </head>
+
   <body class="px-6 lg:px-24 font-poppins text-black space-y-10 lg:space-y-20">
     <!-- Navbar Start -->
     <nav
-      class="flex justify-between py-6 items-center sticky top-0 z-50 bg-white"
+      class="flex justify-between py-6 items-center sticky top-0 z-50 bg-[#FFFFFF]"
     >
       <!-- Logo -->
       <img
@@ -256,6 +271,210 @@
       </div>
     </section>
     <!-- Service Section End -->
+
+    <!-- Our Menu Section Start -->
+    <section class="space-y-10">
+      <!-- Heading Section -->
+      <div
+        class="flex flex-col sm:flex-row sm:justify-between md:items-end gap-y-6"
+      >
+        <div>
+          <h3 class="text-red font-semibold text-lg font-poppins">OUR MENU</h3>
+          <h1
+            class="text-dark-black lg:text-[45px] text-2xl leading-normal font-bold"
+          >
+            Menu That Always <br />
+            Makes You Fall In Love
+          </h1>
+        </div>
+        <div class="flex gap-x-6 items-center justify-center">
+          <img src="./img/arrow left.png" alt="left" width="64" height="24" />
+          <img src="./img/arrow right.png" alt="right" width="64" height="24" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10">
+        <div
+          class="h-[508px] overflow-y-auto pr-6 space-y-10 min-w-[220px] w-full"
+        >
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/burger.svg"
+              alt="burger"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Burger</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/cupcake.svg"
+              alt="cupcake"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Cup Cake</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/french-fries.png"
+              alt="french-fries"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">French Fries</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/ice-cream.svg"
+              alt="ice-cream"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Ice Cream</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/lobster.png"
+              alt="lobster"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Lobster</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/noodles.png"
+              alt="noodles"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Noodles</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/paneer.png"
+              alt="paneer"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Paneer</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/pasta.png"
+              alt="pasta"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Pasta</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/pizza.png"
+              alt="pizza"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Pizza</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/ramen.svg"
+              alt="ramen"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Ramen</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img src="./img/foods/rice.png" alt="rice" width="30" height="30" />
+            <p class="text-black font-semibold text-2xl">Rice</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/roasted-chicken.png"
+              alt="roasted-chicken"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Roasted Chicken</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img
+              src="./img/foods/sandwich.png"
+              alt="sandwich"
+              width="30"
+              height="30"
+            />
+            <p class="text-black font-semibold text-2xl">Sandwich</p>
+          </div>
+          <div class="flex gap-x-6 items-center">
+            <img src="./img/foods/taco.png" alt="taco" width="30" height="30" />
+            <p class="text-black font-semibold text-2xl">Taco</p>
+          </div>
+        </div>
+        <div class="col-span-2 flex overflow-x-scroll py-4 md:gap-x-10">
+          <div
+            class="min-w-[436px] w-full h-[508px] px-6 py-6 rounded-3xl bg-[url('./img/foods/delicious-burger.jpg')] bg-cover"
+          >
+            <h2 class="text-[#FFFFFF] text-[34px] font-semibold">
+              Pastrami burger
+            </h2>
+            <h1 class="text-3xl text-white font-bold">
+              <span class="font-bold text-xl text-red">$</span>700
+            </h1>
+            <p class="cursor-pointer text-white font-semibold text-xl">
+              Order Now
+              <i class="fa-solid fa-arrow-right pl-2"></i>
+            </p>
+          </div>
+          <div
+            class="min-w-[436px] w-full h-[508px] px-6 py-6 rounded-3xl bg-[url('./img/foods/fries.jpg')] bg-cover"
+          >
+            <h2 class="text-[#FFFFFF] text-[34px] font-semibold">
+              The Standard Cut
+            </h2>
+            <h1 class="text-3xl text-white font-bold">
+              <span class="font-bold text-xl text-red">$</span>500
+            </h1>
+            <p class="cursor-pointer text-white font-semibold text-xl">
+              Order Now
+              <i class="fa-solid fa-arrow-right pl-2"></i>
+            </p>
+          </div>
+          <div
+            class="min-w-[436px] w-full h-[508px] px-6 py-6 rounded-3xl bg-[url('./img/foods/icecream.jpg')] bg-cover"
+          >
+            <h2 class="text-[#FFFFFF] text-[34px] font-semibold">
+              Fruity Frosty Delights
+            </h2>
+            <h1 class="text-3xl text-white font-bold">
+              <span class="font-bold text-xl text-red">$</span>650
+            </h1>
+            <p class="cursor-pointer text-white font-semibold text-xl">
+              Order Now
+              <i class="fa-solid fa-arrow-right pl-2"></i>
+            </p>
+          </div>
+          <div
+            class="min-w-[436px] w-full h-[508px] px-6 py-6 rounded-3xl bg-[url('./img/foods/pizzatable.jpg')] bg-cover"
+          >
+            <h2 class="text-[#FFFFFF] text-[34px] font-semibold">
+              Italian Pizza
+            </h2>
+            <h1 class="text-3xl text-white font-bold">
+              <span class="font-bold text-xl text-red">$</span>570
+            </h1>
+            <p class="cursor-pointer text-white font-semibold text-xl">
+              Order Now
+              <i class="fa-solid fa-arrow-right pl-2"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Menu Section Start -->
 
     <!-- About Us Section Start -->
     <section
